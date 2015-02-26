@@ -1,0 +1,13 @@
+lap_webservice:
+    resource: "@LAPWebserviceBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+nelmio_api_doc_index:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix: /api/doc
+
+ws_rest_default:
+    type: rest
+    resource: LAP\WebserviceBundle\Controller\DefaultRestController
+    prefix: /api
